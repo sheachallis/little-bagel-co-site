@@ -1,0 +1,251 @@
+/* BODY */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* FONTS */
+
+@font-face {
+  font-family: "New Yorker";
+  src: url(/fonts/Fox-Regular/FOXTROTM.TTF);
+}
+
+/* HEADER */
+
+.header-left {
+  padding-left: 20px;
+  display: flex;
+  float: left;
+  width: 85%;
+  align-items: center;
+  min-height: 4vh;
+  background-color: rgb(237, 237, 237);
+  font-family: "New Yorker", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
+.header-right {
+  display: flex;
+  float: right;
+  padding-right: 20px;
+  justify-content: space-around;
+  width: 15%;
+  align-items: center;
+  min-height: 4vh;
+  background-color: rgb(237, 237, 237);
+}
+header li {
+  text-decoration: none;
+  list-style: none;
+}
+.phone-logo {
+  width: 20px;
+  height: 20px;
+  padding-top: 2px;
+  padding-right: 5px;
+}
+.tel-no a {
+  padding-bottom: 4px;
+  color: black;
+  text-decoration: none;
+}
+.tel-no:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+.social-logos {
+  width: 20px;
+  height: 20px;
+}
+.social-logos:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+/* FOOTER */
+
+.jump-to-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.jump-to-top a {
+  color: black;
+  font-family: "New Yorker", cursive;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/* NAVBAR */
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: white;
+  font-family: "New Yorker", cursive;
+}
+.logo img {
+  width: 55px;
+  float: none;
+  height: 55px;
+  border-radius: 35px;
+  margin-top: 2px;
+}
+.logo {
+  position: center;
+}
+
+/* NAV LEFT */
+
+.nav-links-left {
+  float: left;
+  display: flex;
+  padding-left: 200px;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+.nav-links-left li {
+  list-style: none;
+}
+.nav-links-left a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.nav-links-left a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+/* NAV RIGHT */
+
+.nav-links-right {
+  float: right;
+  display: flex;
+  padding-right: 200px;
+  justify-content: space-around;
+  width: 50%;
+  align-items: center;
+}
+.nav-links-right li {
+  list-style: none;
+}
+.nav-links-right a {
+  color: black;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.nav-links-right a:hover {
+  text-decoration: underline;
+  transition: 1s;
+}
+
+/* BURGER */
+
+.burger div {
+  width: 25px;
+  height: 1px;
+  background-color: black;
+  margin: 5px;
+  border-radius: 2px;
+  transition: all 0.2s ease;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 668px) {
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    display: none;
+  }
+  .nav-links-left {
+    padding-left: 0px;
+  }
+  .nav-links-right {
+    padding-right: 0px;
+  }
+  .nav-links li {
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: 10vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translate(100%);
+    transition: transform 0.2s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    padding-right: 25px;
+    display: block;
+  }
+  .jump-to-top {
+    display: none;
+  }
+}
+
+/* NAV ACTIVE */
+
+.nav-active {
+  transform: translate(0%);
+}
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: 50px;
+  }
+  to {
+    opacity: 1;
+    transform: 0px;
+  }
+}
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 3.6px);
+}
+.toggle .line-2 {
+  opacity: 0;
+}
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -3.6px);
+}
+
+/* MAIN CONTENT */
+
+main {
+  padding: 10px;
+  font-family: "Dosis", sans-serif;
+  background-color: black;
+}
+main h2 {
+  font-family: "New Yorker", cursive;
+  color: white;
+}
