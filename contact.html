@@ -8,17 +8,9 @@
     <meta name="description" content="..." />
     <title>Little Bagel Co - New York-Style Bagels & Coffee</title>
     <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="/css/app-styles.css" />
+    <link rel="stylesheet" href="/css/contact-styles.css" />
+    <link rel="stylesheet" href="/css/mobile-styles.css" />
   </head>
   <body>
     <header>
@@ -68,12 +60,32 @@
       </div>
     </nav>
     <main>
-      <h2>Contact</h2>
+      <form onsubmit="sendEmail(); reset(); return false;">
+        <h3>Get In Touch</h3>
+        <input
+          type="text"
+          id="name"
+          class="feedback-input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          id="email"
+          class="feedback-input"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          id="message"
+          class="feedback-input"
+          placeholder="Comment"
+        ></textarea>
+        <button type="submit">SUBMIT</button>
+      </form>
     </main>
-    <footer class="jump-to-top">
-      <a href="#">Jump To Top</a>
-    </footer>
-
-    <script src="/app.js"></script>
+    <script src="/scripts/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/scripts/contact.js"></script>
   </body>
 </html>
