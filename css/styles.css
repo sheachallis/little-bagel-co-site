@@ -1,3 +1,10 @@
+/* FONTS */
+
+@font-face {
+  font-family: "New Yorker";
+  src: url(/fonts/Fox-Regular/FOXTROTM.TTF);
+}
+
 /* BODY */
 
 * {
@@ -10,38 +17,36 @@ body {
   overflow-x: hidden;
 }
 
-/* FONTS */
-
-@font-face {
-  font-family: "New Yorker";
-  src: url(/fonts/Fox-Regular/FOXTROTM.TTF);
-}
-
 /* HEADER */
 
-.header-left {
-  padding-left: 20px;
+header {
+  overflow: hidden;
+}
+
+header ul {
   display: flex;
-  float: left;
-  width: 85%;
   align-items: center;
   min-height: 4vh;
-  background-color: rgb(237, 237, 237);
+  background-color: rgba(55, 168, 224, 0.05);
+}
+
+.header-left {
+  float: left;
+  padding-left: 40px;
+  width: 85%;
   font-family: "New Yorker", cursive;
   color: black;
   text-decoration: none;
   font-size: 12px;
 }
+
 .header-right {
-  display: flex;
   float: right;
   padding-right: 20px;
   justify-content: space-around;
   width: 15%;
-  align-items: center;
-  min-height: 4vh;
-  background-color: rgb(237, 237, 237);
 }
+
 header li {
   text-decoration: none;
   list-style: none;
@@ -76,6 +81,7 @@ header li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-bottom: 20px;
 }
 .jump-to-top a {
   color: black;
@@ -88,77 +94,61 @@ header li {
 
 /* NAVBAR */
 
-.nav-links {
+nav {
   display: flex;
-  width: 100%;
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
   background-color: white;
   font-family: "New Yorker", cursive;
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: black; */
 }
+
 .logo img {
   width: 55px;
-  float: none;
   height: 55px;
-  border-radius: 35px;
-  margin-top: 2px;
 }
+
 .logo {
-  position: center;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-/* NAV LEFT */
-
-.nav-links-left {
-  float: left;
+.nav-links {
   display: flex;
-  padding-left: 200px;
   justify-content: space-around;
-  width: 50%;
-  align-items: center;
+  width: 60%;
 }
-.nav-links-left li {
+
+.nav-links li {
+  width: 60px;
+  text-align: center;
   list-style: none;
 }
-.nav-links-left a {
+
+.nav-links a {
   color: black;
   text-decoration: none;
   letter-spacing: 0.5px;
   font-size: 12px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
-.nav-links-left a:hover {
-  text-decoration: underline;
-  transition: 1s;
-}
-
-/* NAV RIGHT */
-
-.nav-links-right {
-  float: right;
-  display: flex;
-  padding-right: 200px;
-  justify-content: space-around;
-  width: 50%;
-  align-items: center;
-}
-.nav-links-right li {
-  list-style: none;
-}
-.nav-links-right a {
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.nav-links-right a:hover {
+.nav-links a:hover {
   text-decoration: underline;
   transition: 1s;
 }
 
 /* BURGER */
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
 
 .burger div {
   width: 25px;
@@ -166,29 +156,22 @@ header li {
   background-color: black;
   margin: 5px;
   border-radius: 2px;
-  transition: all 0.2s ease;
-}
-.burger {
-  display: none;
-  cursor: pointer;
+  transition: all 1s ease;
 }
 
 /* MOBILE VIEW */
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 678px) {
   body {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
+
   header {
     display: none;
   }
-  .nav-links-left {
-    padding-left: 0px;
-  }
-  .nav-links-right {
-    padding-right: 0px;
-  }
-  .nav-links li {
+
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 90vh;
@@ -198,14 +181,24 @@ header li {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    transform: translate(100%);
+    transform: translateX(100%);
     transition: transform 0.2s ease-in;
   }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .nav-links #logo-space {
+    display: none;
+  }
+
   .nav-links li {
     opacity: 0;
   }
   .burger {
-    padding-right: 25px;
+    padding-left: 75vh;
+    padding-right: 25vh;
     display: block;
   }
   .jump-to-top {
@@ -216,7 +209,7 @@ header li {
 /* NAV ACTIVE */
 
 .nav-active {
-  transform: translate(0%);
+  transform: translateX(0%);
 }
 @keyframes navLinksFade {
   from {
@@ -241,11 +234,12 @@ header li {
 /* MAIN CONTENT */
 
 main {
+  height: 100vh;
   padding: 10px;
   font-family: "Dosis", sans-serif;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 main h2 {
   font-family: "New Yorker", cursive;
-  color: white;
+  color: rgb(0, 0, 0);
 }
