@@ -15,6 +15,7 @@ main {
 
 .location-container {
   padding-top: 15px;
+  padding-left: 30px;
 }
 
 .map-container,
@@ -37,6 +38,11 @@ main {
 .location-logo {
   width: 18px;
 }
+
+/* .email-address {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+} */
 
 .email-address:hover {
   transform: translateY(-2px);
