@@ -1,6 +1,6 @@
 /* MOBILE VIEW */
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -24,7 +24,7 @@
   }
 
   .nav-links a {
-    font-size: 15px;
+    font-size: 22px;
   }
 
   .nav-links #logo-space {
@@ -46,9 +46,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 100px;
   }
   .location-container {
-    padding-top: 20px;
+    padding-top: 60px;
   }
 }
 
@@ -69,13 +70,13 @@
   }
 }
 .toggle .line-1 {
-  transform: rotate(-45deg) translate(-5px, 3.6px);
+  transform: rotate(-45deg) translate(-5px, 6.2px);
 }
 .toggle .line-2 {
   opacity: 0;
 }
 .toggle .line-3 {
-  transform: rotate(45deg) translate(-5px, -3.6px);
+  transform: rotate(45deg) translate(-5px, -6.2px);
 }
 
 .toggle .delivery-tab-container {

@@ -1,5 +1,7 @@
 main {
-  padding: 100px;
+  padding-top: 100px;
+  padding-left: 200px;
+  padding-right: 200px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -13,36 +15,32 @@ main {
   align-items: center;
 }
 
-.location-container {
-  padding-top: 15px;
-  padding-left: 15px;
-}
-
 .map-container,
 .location-container {
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   background-color: rgb(255, 255, 255);
 }
 
+.location-container {
+  padding-top: 22.5px;
+  padding-left: 22.5px;
+}
+
 .location-details div {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .location-details {
   font-family: "New Yorker", cursive;
   color: rgb(0, 0, 0);
+  font-size: 25px;
 }
 
 .location-logo {
-  width: 18px;
+  width: 27px;
 }
-
-/* .email-address {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-} */
 
 .email-address:hover {
   transform: translateY(-2px);
@@ -56,7 +54,7 @@ main {
 }
 
 .tel-and-email a {
-  padding-left: 10px;
+  padding-left: 15px;
   color: black;
   text-decoration: none;
 }
