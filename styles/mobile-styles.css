@@ -9,10 +9,6 @@
     display: none;
   }
 
-  /* nav {
-      position: fixed;
-    } */
-
   .nav-links {
     position: absolute;
     right: 0px;
@@ -39,8 +35,8 @@
     opacity: 0;
   }
   .burger {
-    padding-left: 75vh;
-    padding-right: 25vh;
+    padding-left: 90vw;
+    padding-right: 10vw;
     display: block;
   }
   .jump-to-top {
@@ -61,6 +57,7 @@
 .nav-active {
   transform: translateX(0%);
 }
+
 @keyframes navLinksFade {
   from {
     opacity: 0;

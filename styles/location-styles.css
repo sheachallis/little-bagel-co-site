@@ -15,7 +15,7 @@ main {
 
 .location-container {
   padding-top: 15px;
-  padding-left: 30px;
+  padding-left: 15px;
 }
 
 .map-container,
@@ -61,15 +61,15 @@ main {
   text-decoration: none;
 }
 
-.opening-times__row {
+.opening-times-row {
   display: flex;
 }
 
-.opening-times__row li {
+.opening-times-row li {
   list-style: none;
 }
 
-.opening-times__row .day {
+.opening-times-row .day {
   float: left;
   width: 40%;
 }
