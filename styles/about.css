@@ -1,6 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 main {
-  font-family: "New Yorker", cursive;
-  padding: 150px;
-  background-color: rgb(255, 255, 255);
-  height: 5000px;
+  padding: 7rem;
+}
+
+.about-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-pic img,
+.about-para {
+  width: 45vw;
+  padding: 2vw;
+}
+
+.about-para p {
+  font-family: "Palace";
+  font-size: 3.5vw;
+}
+
+@media screen and (max-width: 900px) {
+  .about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-pic img {
+    width: 95vw;
+    padding-bottom: 40px;
+  }
+  .about-para {
+    width: 85vw;
+  }
+  .about-para p {
+    font-size: 7vw;
+  }
 }

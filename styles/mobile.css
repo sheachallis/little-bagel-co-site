@@ -1,6 +1,10 @@
+html {
+  font-size: 62.5%;
+}
+
 /* MOBILE VIEW */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   body {
     overflow-x: hidden;
   }
@@ -9,16 +13,20 @@
     display: none;
   }
 
+  nav {
+    border-style: none;
+  }
+
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 90vh;
-    top: 10vh;
+    top: 10rem;
+    height: calc(100vh - 10rem);
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     transform: translateX(100%);
     transition: transform 0.2s ease-in;
   }
@@ -35,24 +43,11 @@
     opacity: 0;
   }
   .burger {
-    padding-left: 90vw;
-    padding-right: 10vw;
+    padding-left: 85vw;
+    padding-right: 15vw;
     display: block;
   }
-  .jump-to-top {
-    display: none;
-  }
-  .map-and-location {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 100px;
-  }
-  .location-container {
-    padding-top: 60px;
-  }
 }
-
 /* NAV ACTIVE */
 
 .nav-active {
@@ -69,14 +64,15 @@
     transform: 0px;
   }
 }
+
 .toggle .line-1 {
-  transform: rotate(-45deg) translate(-5px, 6.2px);
+  transform: rotate(-45deg) translate(-5px, 6.8px);
 }
 .toggle .line-2 {
   opacity: 0;
 }
 .toggle .line-3 {
-  transform: rotate(45deg) translate(-5px, -6.2px);
+  transform: rotate(45deg) translate(-5px, -6.8px);
 }
 
 .toggle .delivery-tab-container {

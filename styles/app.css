@@ -1,8 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
 /* FONTS */
 
 @font-face {
   font-family: "New Yorker";
-  src: url(/fonts/FOXTROTM.TTF);
+  src: url(/fonts/FOXTROTM.ttf);
+}
+@font-face {
+  font-family: "Belleza";
+  src: url(/fonts/Belleza-Regular.ttf);
+}
+@font-face {
+  font-family: "Bothering Script";
+  src: url(/fonts/BotheringScript_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+  font-family: "Palace";
+  src: url(/fonts/Palace.ttf);
+}
+@font-face {
+  font-family: "Southland";
+  src: url(/fonts/Southland\ TTF.ttf);
+}
+@font-face {
+  font-family: "Windey Signature";
+  src: url(/fonts/Windey\ Signature.otf);
 }
 
 /* BODY */
@@ -26,14 +50,14 @@ header {
 header ul {
   display: flex;
   align-items: center;
-  min-height: 4vh;
-  background-color: rgba(255, 255, 255);
+  min-height: 3.5rem;
+  background-color: rgb(255, 255, 255);
 }
 
 .header-left {
   float: left;
-  padding-left: 60px;
-  width: 84%;
+  padding-left: 2vw;
+  width: 88%;
   font-family: "New Yorker", cursive;
   color: black;
   text-decoration: none;
@@ -42,9 +66,9 @@ header ul {
 
 .header-right {
   float: right;
-  padding-right: 30px;
+  padding-right: 1vw;
   justify-content: space-around;
-  width: 16%;
+  width: 12%;
 }
 
 header li {
@@ -52,8 +76,8 @@ header li {
   list-style: none;
 }
 .phone-logo {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   padding-top: 3px;
   padding-right: 7.5px;
 }
@@ -67,8 +91,8 @@ header li {
   transition: 0.2s;
 }
 .social-logos {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
 }
 .social-logos:hover {
   transform: translateY(-2px);
@@ -81,7 +105,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 10vh;
+  min-height: 10rem;
   background-color: white;
   font-family: "New Yorker", cursive;
   border-style: solid;
@@ -89,16 +113,17 @@ nav {
   border-color: rgba(55, 168, 224, 0.2);
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .logo img {
-  width: 82px;
-  height: 82px;
+  width: 9rem;
+  height: 9rem;
 }
 
 .logo {
-  width: 82px;
-  height: 82px;
+  width: 9rem;
+  height: 9rem;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -120,7 +145,7 @@ nav {
   color: black;
   text-decoration: none;
   letter-spacing: 0.5px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .nav-links a:hover {
   text-decoration: underline;
@@ -135,29 +160,12 @@ nav {
 }
 
 .burger div {
-  width: 35px;
-  height: 1px;
+  width: 3.5rem;
+  height: 0.15rem;
   background-color: black;
-  margin: 7px;
-  border-radius: 2px;
+  margin: 0.7rem;
+  border-radius: 0.2rem;
   transition: all 0.5s ease;
-}
-
-/* FOOTER */
-
-.jump-to-top {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-bottom: 20px;
-}
-.jump-to-top a {
-  color: black;
-  font-family: "New Yorker", cursive;
-  text-decoration: none;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  font-size: 15px;
 }
 
 /* DELIVERY TAB */
@@ -168,14 +176,14 @@ nav {
   text-align: center;
   position: fixed;
   transform: rotate(-90deg);
-  top: 50vh;
-  bottom: 50vh;
-  height: 37.5px;
-  width: 153px;
+  top: 53vh;
+  bottom: 47vh;
+  height: 3.75rem;
+  width: 15.3rem;
   margin-left: -58px;
   background-color: rgba(55, 168, 224);
-  border-bottom-left-radius: 13px;
-  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 1.3rem;
+  border-bottom-right-radius: 1.3rem;
 }
 
 .delivery-tab {
@@ -184,9 +192,9 @@ nav {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  height: 22.5px;
-  width: 135px;
-  border-radius: 10px;
+  height: 2.25rem;
+  width: 13.5rem;
+  border-radius: 1rem;
   background-color: rgba(34, 31, 26, 255);
   filter: blur(0.15px);
 }
@@ -198,9 +206,9 @@ nav {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 0.8px;
+  padding-top: 0.3px;
   text-decoration: none;
   letter-spacing: 0.5px;
-  font-size: 18px;
+  font-size: 1.8rem;
   color: rgba(254, 254, 254, 255);
 }

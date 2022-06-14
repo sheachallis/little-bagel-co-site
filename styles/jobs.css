@@ -1,6 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 main {
-  font-family: "New Yorker", cursive;
-  padding: 150px;
-  background-color: rgb(255, 255, 255);
-  height: 5000px;
+  font-family: "Belleza", cursive;
+  padding-top: 5rem;
+  padding-left: 15vw;
+  padding-right: 15vw;
+  padding-bottom: 15rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 1rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+main p {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+main li {
+  font-size: 2rem;
+  padding: 1rem;
+  list-style: none;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 20%;
+  }
+  main {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }
