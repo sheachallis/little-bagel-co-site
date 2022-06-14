@@ -22,8 +22,10 @@ main {
 }
 
 .about-para p {
-  font-family: "Palace";
-  font-size: 3.5vw;
+  font-family: "High Summit";
+  font-size: 2.3vw;
+  line-height: 4vw;
+  text-align: center;
 }
 
 @media screen and (max-width: 900px) {
@@ -41,5 +43,6 @@ main {
   }
   .about-para p {
     font-size: 7vw;
+    line-height: 8.5vw;
   }
 }

@@ -6,27 +6,23 @@ html {
 
 @font-face {
   font-family: "New Yorker";
-  src: url(/fonts/FOXTROTM.ttf);
+  src: url(/fonts/FoxTrot-Regular.ttf);
 }
 @font-face {
   font-family: "Belleza";
   src: url(/fonts/Belleza-Regular.ttf);
 }
 @font-face {
-  font-family: "Bothering Script";
-  src: url(/fonts/BotheringScript_PERSONAL_USE_ONLY.otf);
+  font-family: "Badlooking Brush";
+  src: url(/fonts/Badlooking-Brush.otf);
 }
 @font-face {
-  font-family: "Palace";
-  src: url(/fonts/Palace.ttf);
+  font-family: "High Summit";
+  src: url(/fonts/High-Summit.ttf);
 }
 @font-face {
-  font-family: "Southland";
-  src: url(/fonts/Southland\ TTF.ttf);
-}
-@font-face {
-  font-family: "Windey Signature";
-  src: url(/fonts/Windey\ Signature.otf);
+  font-family: "Solleno";
+  src: url(/fonts/Solleno.ttf);
 }
 
 /* BODY */
@@ -169,6 +165,9 @@ nav {
 }
 
 /* DELIVERY TAB */
+a {
+  text-decoration: none;
+}
 
 .delivery-tab-container {
   display: flex;
@@ -199,14 +198,14 @@ nav {
   filter: blur(0.15px);
 }
 
-.delivery-tab a {
-  font-family: "New Yorker", cursive;
+.delivery-tab p {
+  font-family: "New Yorker";
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-  padding-top: 0.3px;
+  padding-top: 1.5px;
   text-decoration: none;
   letter-spacing: 0.5px;
   font-size: 1.8rem;
