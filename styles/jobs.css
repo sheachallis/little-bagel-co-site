@@ -52,9 +52,6 @@ main li {
 }
 
 @media screen and (max-width: 900px) {
-  html {
-    font-size: 20%;
-  }
   main {
     padding-left: 5vw;
     padding-right: 5vw;

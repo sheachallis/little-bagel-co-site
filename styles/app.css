@@ -13,16 +13,20 @@ html {
   src: url(/fonts/Belleza-Regular.ttf);
 }
 @font-face {
-  font-family: "Badlooking Brush";
-  src: url(/fonts/Badlooking-Brush.otf);
-}
-@font-face {
   font-family: "High Summit";
   src: url(/fonts/High-Summit.ttf);
 }
 @font-face {
-  font-family: "Solleno";
-  src: url(/fonts/Solleno.ttf);
+  font-family: "Instafont";
+  src: url(/fonts/Billabong.ttf);
+}
+@font-face {
+  font-family: "Klavika";
+  src: url(/fonts/klavika-bold.otf);
+}
+@font-face {
+  font-family: "Foodstuff";
+  src: url(/fonts/Recoleta-Regular.otf);
 }
 
 /* BODY */
@@ -199,7 +203,7 @@ a {
 }
 
 .delivery-tab p {
-  font-family: "New Yorker";
+  font-family: "Foodstuff";
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -208,6 +212,93 @@ a {
   padding-top: 1.5px;
   text-decoration: none;
   letter-spacing: 0.5px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
   color: rgba(254, 254, 254, 255);
+}
+
+/* MOBILE VIEW */
+
+@media screen and (max-width: 900px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
+
+  header {
+    display: none;
+  }
+
+  /* NAVBAR */
+  main {
+    margin-top: 10rem;
+  }
+
+  nav {
+    border-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    top: 10rem;
+    height: calc(100vh - 10rem);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    transform: translateX(100%);
+    transition: transform 0.2s ease-in;
+  }
+
+  .nav-links a {
+    font-size: 22px;
+  }
+
+  .nav-links #logo-space {
+    display: none;
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    padding-left: 85vw;
+    padding-right: 15vw;
+    display: block;
+  }
+}
+/* NAV ACTIVE */
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0;
+    transform: 50px;
+  }
+  to {
+    opacity: 1;
+    transform: 0px;
+  }
+}
+
+.toggle .line-1 {
+  transform: rotate(-45deg) translate(-5px, 6.8px);
+}
+.toggle .line-2 {
+  opacity: 0;
+}
+.toggle .line-3 {
+  transform: rotate(45deg) translate(-5px, -6.8px);
+}
+
+.toggle .delivery-tab-container {
+  display: none;
 }

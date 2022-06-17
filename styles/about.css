@@ -10,7 +10,7 @@ main {
   padding: 7rem;
 }
 
-.about-page {
+.about-page-top {
   display: flex;
   justify-content: space-around;
 }
@@ -27,9 +27,19 @@ main {
   line-height: 4vw;
   text-align: center;
 }
+.about-page-bottom {
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+.about-page-bottom p {
+  font-family: "High Summit";
+  font-size: 2.3vw;
+  line-height: 4vw;
+  text-align: center;
+}
 
 @media screen and (max-width: 900px) {
-  .about-page {
+  .about-page-top {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,10 +49,14 @@ main {
     padding-bottom: 40px;
   }
   .about-para {
-    width: 85vw;
+    width: 90vw;
   }
   .about-para p {
-    font-size: 7vw;
+    font-size: 6vw;
+    line-height: 8.5vw;
+  }
+  .about-page-bottom p {
+    font-size: 6vw;
     line-height: 8.5vw;
   }
 }

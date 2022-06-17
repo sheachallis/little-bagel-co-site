@@ -13,9 +13,19 @@ main {
 /* TOP IMAGE */
 .home-page-top-image {
   text-align: center;
+  position: relative;
 }
-.home-page-top-image img {
+.bagels-on-tray {
+  display: block;
   width: 100vw;
+}
+.logo-large {
+  opacity: 0.9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 40vw;
 }
 
 /* COFFEE/CAKE PIC & HOME DESCRIPTION */
@@ -48,104 +58,71 @@ main {
   line-height: 2.5vw;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  width: 50vw;
-  position: relative;
-  margin: auto;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  width: auto;
-  top: 50%;
-  transform: translate(0, -50%);
-  color: rgb(0, 0, 0, 0.4);
-  font-weight: normal;
-  font-size: 2vw;
-  line-height: 33vw;
-  transition: 0.6s ease;
-  border-radius: 0 0.5vw 0.5vw 0;
-  user-select: none;
-}
-.prev {
-  padding-right: 6vw;
-}
-
-.next {
-  right: 0;
-  padding-left: 6vw;
-}
-
-/* Caption text */
-.text {
-  color: rgb(255, 255, 255);
-  font-family: "New Yorker";
-  font-size: 3vw;
-  letter-spacing: 0.05vw;
-  padding: 1vw 1vw;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 1vw;
-  width: 1vw;
-  margin: 0 0.3vw 4vw;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* INSTA LINK */
 .insta-link {
   display: none;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-  height: 10vw;
-  background-color: rgba(55, 168, 224, 0.25);
+  height: 15vw;
+  background-color: rgba(55, 168, 224, 0.65);
 }
 .insta-link p {
-  font-family: "New Yorker";
-  font-size: 2vw;
+  font-family: "Instafont";
+  font-size: 5.5vw;
+  line-height: 4vw;
+  padding-top: 1.5vw;
   color: black;
   text-decoration: none;
 }
 .insta-link img {
-  width: 6vw;
+  width: 8vw;
+}
+
+/* FACEBOOK LINK */
+.facebook-link {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 15vw;
+  background-color: rgba(55, 168, 224, 1);
+}
+.facebook-link p {
+  font-family: "Klavika";
+  font-size: 4.3vw;
+  line-height: 4vw;
+  letter-spacing: -0.1vw;
+  padding-top: 1.5vw;
+  color: black;
+  text-decoration: none;
+}
+.facebook-link img {
+  width: 8vw;
+}
+
+/* FOODSTUFF LINK */
+.foodstuff-link {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 15vw;
+  margin-top: 5vw;
+  background-color: rgba(55, 168, 224, 0.25);
+}
+.foodstuff-link p {
+  font-family: "Foodstuff";
+  font-size: 4vw;
+  font-weight: 900;
+  line-height: 4vw;
+  padding-top: 1vw;
+  padding-bottom: 0.8vw;
+  color: black;
+  text-decoration: none;
+}
+.foodstuff-link img {
+  width: 5.5vw;
 }
 
 /* MOBILE VIEW */
@@ -178,41 +155,29 @@ main {
     margin-bottom: 4vw;
   }
 
-  /* SLIDESHOW */
-
-  .slideshow-container {
-    width: 70vw;
-  }
-  .prev,
-  .next {
-    font-size: 4vw;
-    line-height: 46vw;
-  }
-  .prev {
-    padding-right: 12vw;
-  }
-
-  .next {
-    padding-left: 12vw;
-  }
-
   /* INSTA LINK */
   .insta-link {
     display: flex;
-    height: 15vw;
   }
-  .insta-link p {
-    font-size: 4vw;
-  }
-  .insta-link img {
-    width: 8vw;
+
+  /* FACEBOOK LINK */
+  .facebook-link {
+    display: flex;
   }
 
   /* DELIVERY TAB */
-
   .delivery-tab-container {
+    display: none;
+  }
+
+  /* FOODSTUFF LINK */
+  .foodstuff-link {
+    display: flex;
+  }
+  /* .delivery-tab-container {
     transform: rotate(0deg);
     position: relative;
+    margin-top: 5vw;
     margin-left: 0;
     width: 100vw;
     height: 15vw;
@@ -222,14 +187,12 @@ main {
     bottom: 0;
   }
   .delivery-tab {
-    /* height: 4rem; */
     height: 8vw;
-    /* width: 18rem; */
     width: 36vw;
   }
   .delivery-tab p {
     padding-top: 1.4vw;
-    /* font-size: 2.4rem; */
-    font-size: 5vw;
-  }
+    font-family: "Foodstuff";
+    font-size: 4.2vw;
+  } */
 }
