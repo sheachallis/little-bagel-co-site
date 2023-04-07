@@ -229,6 +229,10 @@ a {
   }
 
   /* NAVBAR */
+  .fixed-position {
+    position: fixed;
+  }
+
   main {
     margin-top: 10rem;
   }
@@ -245,6 +249,7 @@ a {
     position: absolute;
     right: 0px;
     top: 10rem;
+    padding-bottom: 10rem;
     height: calc(100vh - 10rem);
     background-color: white;
     display: flex;

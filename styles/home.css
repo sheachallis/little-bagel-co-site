@@ -20,7 +20,7 @@ main {
   width: 100vw;
 }
 .logo-large {
-  opacity: 0.9;
+  opacity: 0.8;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
